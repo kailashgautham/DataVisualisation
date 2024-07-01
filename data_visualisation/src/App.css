@@ -1,0 +1,46 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.app-container {
+  text-align: center;
+  width: 100%;
+}
+
+.header {
+  color: black;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.render-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#chart-container, #box-plot-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+}
