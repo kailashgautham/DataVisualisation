@@ -13,6 +13,16 @@ interface NumCandidates {
     passed: number;
 }
 
+interface FiveNumberSummary {
+    mean: number;
+    stdDev: number;
+    lowest: number;
+    lowerQuartile: number;
+    median: number;
+    upperQuartile: number;
+    highest: number;
+}
+
 const Plotly: React.FC = () => {
     const [data, setData] = useState<NumCandidates>({
         total: 0,
@@ -25,7 +35,7 @@ const Plotly: React.FC = () => {
         passed: 0
     });
 
-    const [fiveNumberSummary, setFiveNumberSummary] = useState(null);
+    const [fiveNumberSummary, setFiveNumberSummary] = useState<FiveNumberSummary | null>(null);
 
     const handleClick = () => {
         const newData: NumCandidates = {
